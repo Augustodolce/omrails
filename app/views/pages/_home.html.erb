@@ -1,0 +1,11 @@
+<% unless user_signed_in? %>
+	<div class="hero-unit">
+		<h1>Welcome to Goose's Ruby App!</h1>
+		<p>
+			You've found the home page for the prototype app.
+		</p>
+		<p>
+			<%= link_to "sign up now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %> 
